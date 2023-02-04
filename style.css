@@ -14,10 +14,12 @@ header {
 }
 
 nav a {
+    text-decoration: none;
     margin-left: 3em
 }
 
 nav img {
-    width: 0.2;
-    height:0.1;
+    object-fit: contain;
+    width: 5em;
+    height: 4em;
 }
