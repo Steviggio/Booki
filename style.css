@@ -50,6 +50,23 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     border: solid 0.1em;
+}
+
+.article {
+    flex-grow: 1 1 auto;
+}
+
+.first {
+    background-color: aqua;
+}
+
+.second {
+    background-color: red;
+}
+
+.third {
+    background-color: violet;
 }
  
