@@ -45,3 +45,8 @@ footer {
 .list h2 {
     font-size: 1.2em;
 }
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+}
