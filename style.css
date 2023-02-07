@@ -2,6 +2,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
+:root {
+    --back_blue: #0065FC;
+    --back_grey: #F2F2F2;
+}
+
 .flexCenter {
     display: flex;
     flex-direction: row;
@@ -13,7 +18,11 @@ nav {
 }
 
 .greyBackground {
-    background-color: #F2F2F2
+    background-color: var(--back_grey)
+}
+
+.blueBackground {
+    background-color: var(--back_blue);
 }
 
 header {
@@ -36,7 +45,7 @@ nav img {
 
 footer {
     display: flex;
-    background-color: #F2F2F2;
+    background-color: var(--back_grey);
     margin: 2.5em;
     padding-bottom: 2em;
     justify-content: space-around;
@@ -58,25 +67,30 @@ footer {
 }
 
 .search-bar {
-    width:350px;
+    width: 20em;
     height: 2em;
     justify-content: flex-start;
+    border: solid 1px;
+    border-radius: 0.7em;
+    border-color: var(--back_grey);
 }
 
-.search-bar div {
-    border: solid 1px;
-    height: 100%;
-    width: 100%;
+.noBorder {
+        border: none;
 }
 
 div.icon {
     justify-content: center;
-    width: 5em;
+    width: 2.5em;
+    height: 100%;
 }
 
-.input input {
-    height: 80%;
-    border-radius: 0.5em;
+.full_height{
+    height: 100%;
+}
+
+.searchArg {
+    width: 100%;
 }
 
  
