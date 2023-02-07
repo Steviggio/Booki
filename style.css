@@ -2,11 +2,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
-nav, footer {
+.flexCenter {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+nav {
     justify-content: space-between;
+}
+
+.greyBackground {
+    background-color: #F2F2F2
 }
 
 header {
@@ -14,8 +21,11 @@ header {
 }
 
 nav a {
+    margin-left: 3em;
+}
+
+.noDecorations {
     text-decoration: none;
-    margin-left: 3em
 }
 
 nav img {
@@ -25,10 +35,11 @@ nav img {
 }
 
 footer {
+    display: flex;
     background-color: #F2F2F2;
     margin: 2.5em;
-    padding-left: 4em;
-    padding: 2em;
+    padding-bottom: 2em;
+    justify-content: space-around;
 }
 
 .list {
@@ -47,26 +58,25 @@ footer {
 }
 
 .search-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width:350px;
+    height: 2em;
     justify-content: flex-start;
-    border: solid 0.1em;
 }
 
-.article {
-    flex-grow: 1 1 auto;
+.search-bar div {
+    border: solid 1px;
+    height: 100%;
+    width: 100%;
 }
 
-.first {
-    background-color: aqua;
+div.icon {
+    justify-content: center;
+    width: 5em;
 }
 
-.second {
-    background-color: red;
+.input input {
+    height: 80%;
+    border-radius: 0.5em;
 }
 
-.third {
-    background-color: violet;
-}
  
