@@ -4,6 +4,7 @@
 
 :root {
     --back_blue: #0065FC;
+    --light-blue: #DEEBFF;
     --back_grey: #F2F2F2;
 }
 
@@ -15,6 +16,12 @@
 
 nav {
     justify-content: space-between;
+}
+
+nav a:hover {
+    color: var(--back_blue);
+    border-top: solid var(--back_blue);
+    padding-top: 45px
 }
 
 .greyBackground {
@@ -35,6 +42,11 @@ nav a {
 
 .noDecorations {
     text-decoration: none;
+}
+
+input::placeholder{
+    font-weight: bold;
+    color:black
 }
 
 nav img {
@@ -67,12 +79,13 @@ footer {
 }
 
 .search-bar {
-    width: 20em;
-    height: 2em;
+    width: 19em;
+    height: 2.5em;
     justify-content: flex-start;
     border: solid 1px;
     border-radius: 0.7em;
     border-color: var(--back_grey);
+    padding-right: 0.6em
 }
 
 .noBorder {
@@ -81,16 +94,26 @@ footer {
 
 div.icon {
     justify-content: center;
-    width: 2.5em;
+    width: 40%;
     height: 100%;
+    border: none;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    margin-left:0
 }
 
-.full_height{
-    height: 100%;
+.paddingLeft {
+    padding-left: 0.6em;
 }
 
-.searchArg {
+.search-button {
+    height: 100%;
     width: 100%;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    color: white;
+    font-weight: bold
 }
-
  
+
+/* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
