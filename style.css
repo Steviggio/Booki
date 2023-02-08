@@ -6,12 +6,40 @@
 
 body {
     max-width: 1400px;
+    margin: 2.5em;
 }
 
 :root {
     --back_blue: #0065FC;
     --light-blue: #DEEBFF;
     --back_grey: #F2F2F2;
+}
+
+footer {
+    display: flex;
+    background-color: var(--back_grey);
+
+    padding-bottom: 2em;
+    justify-content: space-around;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+/* Css code for the main section of the HTML */
+
+.cityCenter {
+    display: flex;
+    flex-flow: column;
+}
+
+.cityCenter p {
+    margin-top: 5px;
+}
+
+.cityCenter h2 {
+    margin-bottom: 5px;
 }
 
 .flexCenter {
@@ -27,7 +55,7 @@ nav {
 nav a:hover {
     color: var(--back_blue);
     border-top: solid var(--back_blue);
-    padding-top: 22px
+    padding-top: 22px;
 }
 
 .greyBackground {
@@ -38,12 +66,9 @@ nav a:hover {
     background-color: var(--back_blue);
 }
 
-header {
-    padding: 1em 2.5em;
-}
-
 nav a {
     margin-left: 3em;
+    padding-right: 15px
 }
 
 .noDecorations {
@@ -61,13 +86,6 @@ nav img {
     height: 20px;
 }
 
-footer {
-    display: flex;
-    background-color: var(--back_grey);
-    margin: 2.5em;
-    padding-bottom: 2em;
-    justify-content: space-around;
-}
 
 .list {
     display: flex;
