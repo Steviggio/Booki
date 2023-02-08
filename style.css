@@ -1,5 +1,11 @@
+/* Roots of the CSS code and static properties */ 
+
 * {
     font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1400px;
 }
 
 :root {
@@ -21,7 +27,7 @@ nav {
 nav a:hover {
     color: var(--back_blue);
     border-top: solid var(--back_blue);
-    padding-top: 45px
+    padding-top: 22px
 }
 
 .greyBackground {
@@ -51,8 +57,8 @@ input::placeholder{
 
 nav img {
     object-fit: contain;
-    width: 5em;
-    height: 4em;
+    width: 75px;
+    height: 20px;
 }
 
 footer {
@@ -79,11 +85,11 @@ footer {
 }
 
 .search-bar {
-    width: 19em;
-    height: 2.5em;
+    width: 320px;
+    height: 45px;
     justify-content: flex-start;
     border: solid 1px;
-    border-radius: 0.7em;
+    border-radius: 15px;
     border-color: var(--back_grey);
     padding-right: 0.6em
 }
@@ -92,9 +98,9 @@ footer {
         border: none;
 }
 
-div.icon {
+.icon {
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: 100%;
     border: none;
     border-top-left-radius: 0.7em;
@@ -108,11 +114,15 @@ div.icon {
 
 .search-button {
     height: 100%;
-    width: 100%;
-    border-top-right-radius: 0.7em;
-    border-bottom-right-radius: 0.7em;
+    padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     color: white;
     font-weight: bold
+}
+
+.search-button:hover {
+    cursor: pointer;
 }
  
 
