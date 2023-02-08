@@ -15,14 +15,6 @@ body {
     --back_grey: #F2F2F2;
 }
 
-footer {
-    display: flex;
-    background-color: var(--back_grey);
-
-    padding-bottom: 2em;
-    justify-content: space-around;
-}
-
 header {
     margin-bottom: 50px;
 }
@@ -86,22 +78,6 @@ nav img {
     height: 20px;
 }
 
-
-.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.list a {
-    text-decoration: none;
-    margin-bottom: 0.5em;
-    font-size: 1em;
-}
-
-.list h2 {
-    font-size: 1.2em;
-}
-
 .search-bar {
     width: 320px;
     height: 45px;
@@ -109,7 +85,6 @@ nav img {
     border: solid 1px;
     border-radius: 15px;
     border-color: var(--back_grey);
-    padding-right: 0.6em
 }
 
 .noBorder {
@@ -145,3 +120,30 @@ nav img {
  
 
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
+
+/* Css code of the footer section */ 
+
+footer {
+    display: flex;
+    background-color: var(--back_grey);
+    padding-bottom: 2em;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list a {
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.list h2 {
+    font-size: 1.2em;
+}
+
+
+
