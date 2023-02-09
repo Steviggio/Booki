@@ -19,6 +19,47 @@ header {
     margin-bottom: 50px;
 }
 
+.boldText {
+    font-weight: bold;
+    color:black;
+}
+
+.greyBackground {
+    background-color: var(--back_grey)
+}
+
+.blueBackground {
+    background-color: var(--back_blue);
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.noDecorations {
+    text-decoration: none;
+}
+
+.noBorder {
+    border: none;
+}
+
+.greyBorder {
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: var(--back_grey);
+}
+
+.inputNoActiveBorder:focus {
+    outline: none;
+}
+
+.noWrap {
+    flex-wrap: nowrap;
+}
+
 /* Css code for the main section of the HTML */
 
 .cityCenter {
@@ -34,11 +75,6 @@ header {
     margin-bottom: 5px;
 }
 
-.flexCenter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 nav {
     justify-content: space-between;
@@ -50,21 +86,9 @@ nav a:hover {
     padding-top: 22px;
 }
 
-.greyBackground {
-    background-color: var(--back_grey)
-}
-
-.blueBackground {
-    background-color: var(--back_blue);
-}
-
 nav a {
     margin-left: 3em;
     padding-right: 15px
-}
-
-.noDecorations {
-    text-decoration: none;
 }
 
 input::placeholder{
@@ -81,14 +105,6 @@ nav img {
 .search-bar {
     width: 320px;
     height: 45px;
-    justify-content: flex-start;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: var(--back_grey);
-}
-
-.noBorder {
-        border: none;
 }
 
 .icon {
@@ -125,9 +141,21 @@ nav img {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    width: 750px;
     margin-left: 0;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.filter_section i {
+    color: var(--back_blue);
+}
+
+.filter_section div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 130px;
 }
 
 /* Css code of the footer section */ 
