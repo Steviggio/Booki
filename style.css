@@ -36,14 +36,6 @@ header {
     flex-wrap: nowrap;
 }
 
-.flexStart {
-    justify-content: flex-start;
-}
-
-.flexEnd {
-    justify-content: flex-end;
-}
-
 .flexCenter {
     display: flex;
     flex-direction: row;
@@ -166,11 +158,13 @@ nav img {
     color: var(--back_blue);
 }
 
-.filter_section div {
-    display: flex;
+.filter_section * {
+    display: inline-block;
+    flex-direction: row;
     align-items: center;
     height: 40px;
     width: 130px;
+    margin-right: 20px;
 }
 
 .filter_icon  {
