@@ -32,10 +32,30 @@ header {
     background-color: var(--back_blue);
 }
 
+.noWrap {
+    flex-wrap: nowrap;
+}
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
 .flexCenter {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.spaceBetwn {
+    justify-content: space-between;
+}
+
+.noWrap {
+    flex-wrap: nowrap;
 }
 
 .noDecorations {
@@ -56,14 +76,13 @@ header {
     outline: none;
 }
 
-.noWrap {
-    flex-wrap: nowrap;
+.bleuColor {
+    color: var(--back_blue);
 }
 
 /* Css code for the main section of the HTML */
 
-.cityCenter {
-    display: flex;
+.flexCol {
     flex-flow: column;
 }
 
@@ -133,15 +152,11 @@ nav img {
 .search-button:hover {
     cursor: pointer;
 }
- 
 
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
 
 .filter_section {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    width: 750px;
+    width: 740px;
     margin-left: 0;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -157,6 +172,19 @@ nav img {
     height: 40px;
     width: 130px;
 }
+
+.filter_icon  {
+    display: flex;
+    justify-content: center;
+}
+
+#filter {
+    width: 30px
+}
+
+
+/* Css code for "i" section */ 
+
 
 /* Css code of the footer section */ 
 
