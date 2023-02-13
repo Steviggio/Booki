@@ -205,6 +205,26 @@ nav img {
 
 /* two grey sections in the middle */ 
 
+.grey_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first_box {
+    width: 800px;
+    height: 626px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.second_box {
+    width: 420px;
+    height: 625px;
+}
+
 /* Css code of the footer section */ 
 
 footer {
