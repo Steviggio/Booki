@@ -1,4 +1,4 @@
-Informations générales sur les notions présentes dans le Projet "Booki"
+Informations générales sur les notions présentes dans le Projet "Booki":
 
 HTML(HyperText Markup Language) : C'est le langage de balise utilisé afin de créer et de représenter le contenu d'une page web et sa structure.
 
@@ -9,3 +9,4 @@ W3C :
 Les balises HTML : 
 
 Les propriétés en CSS : 
+    flexbox / box-sizing / inline / block /

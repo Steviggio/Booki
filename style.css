@@ -36,6 +36,14 @@ header {
     flex-wrap: nowrap;
 }
 
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
 .flexCenter {
     display: flex;
     flex-direction: row;
@@ -68,7 +76,7 @@ header {
     outline: none;
 }
 
-.bleuColor {
+.blueColor {
     color: var(--back_blue);
 }
 
@@ -158,13 +166,11 @@ nav img {
     color: var(--back_blue);
 }
 
-.filter_section * {
-    display: inline-block;
-    flex-direction: row;
+.filter_section div {
+    display: flex;
     align-items: center;
     height: 40px;
     width: 130px;
-    margin-right: 20px;
 }
 
 .filter_icon  {
@@ -179,6 +185,25 @@ nav img {
 
 /* Css code for "i" section */ 
 
+.info_section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info_section div {
+    margin-right: 5px;
+}
+
+#info_div {
+    display: flex;
+    box-sizing: border-box;
+    width:24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* two grey sections in the middle */ 
 
 /* Css code of the footer section */ 
 
@@ -203,6 +228,5 @@ footer {
 .list h2 {
     font-size: 1.2em;
 }
-
 
 
