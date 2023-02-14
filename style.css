@@ -66,6 +66,10 @@ header {
     border: none;
 }
 
+.boxesRadius {
+    border-radius: 20px;
+}
+
 .greyBorder {
     border: solid 1px;
     border-radius: 15px;
@@ -209,19 +213,19 @@ nav img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .first_box {
-    width: 800px;
+    width: 70%;
     height: 626px;
-    border-radius: 20px;
     margin-right: 20px;
 }
 
 .second_box {
-    width: 420px;
+    width: 30%;
     height: 625px;
 }
 
