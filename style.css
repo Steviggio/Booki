@@ -187,7 +187,7 @@ nav img {
 }
 
 
-/* Css code for "i" section */ 
+/* Css code for "i" line */ 
 
 .info_section {
     display: flex;
@@ -222,11 +222,22 @@ nav img {
     width: 70%;
     height: 626px;
     margin-right: 20px;
+    padding: 30px 50px;
 }
 
 .second_box {
     width: 30%;
     height: 625px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+}
+
+.renting_card {
+    height: 200px;
 }
 
 /* Css code of the footer section */ 
