@@ -238,7 +238,17 @@ nav img {
 
 .renting_card {
     height: 200px;
+    background-color: #FFFFFF;
+    position: relative;
 }
+
+.img_container {
+    display: flex;
+    object-fit: contain;
+
+}
+
+
 
 /* Css code of the footer section */ 
 
