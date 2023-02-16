@@ -211,7 +211,7 @@ nav img {
 
 /* two grey sections in the middle */ 
 
-.grey_boxes {
+.main_part {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -220,14 +220,19 @@ nav img {
     margin-bottom: 20px;
 }
 
-.first_box {
+.renting_box {
     width: 70%;
     height: 626px;
     margin-right: 20px;
-    padding: 30px 50px;
+    padding: 30px 40px;
 }
 
-.second_box {
+.renting_box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.popular_box {
     width: 30%;
     height: 626px;
 }
@@ -236,12 +241,11 @@ nav img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 10px;
-    border: white;
 }
 
 .renting_card {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 200px;
     background-color: #FFFFFF;
 }
@@ -260,6 +264,10 @@ nav img {
 .informations_container * {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.greyStar {
+    color: var(--back_grey);
 }
 
 
@@ -281,6 +289,10 @@ footer {
     text-decoration: none;
     margin-bottom: 0.5em;
     font-size: 1em;
+}
+
+.list a:hover {
+    color: var(--back_blue);
 }
 
 .list h2 {
