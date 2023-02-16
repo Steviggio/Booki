@@ -46,7 +46,6 @@ header {
 
 .flexCenter {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -252,7 +251,6 @@ nav img {
 .informations_container {
     position: relative;
     background-color: white;
-    z-index: 2;
     bottom: 30px;
 }
 
