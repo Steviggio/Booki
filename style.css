@@ -195,18 +195,19 @@ nav img {
     justify-content: flex-start;
 }
 
-.info_section div {
-    margin-right: 5px;
-}
 
-#info_div {
+#info_letter {
     display: flex;
-    box-sizing: border-box;
     width:24px;
     height: 24px;
     justify-content: center;
     align-items: center;
+    border-width: 2px;
+    margin-right: 10px;
+    font-size: 12px;
 }
+
+
 
 /* two grey sections in the middle */ 
 
