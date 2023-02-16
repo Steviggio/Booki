@@ -159,30 +159,32 @@ nav img {
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
 
 .filter_section {
-    width: 740px;
+    width: auto;
     margin-left: 0;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.filter_section i {
-    color: var(--back_blue);
+    justify-content: flex-start;
 }
 
 .filter_section div {
     display: flex;
     align-items: center;
     height: 40px;
-    width: 130px;
+    width: auto;
+    margin: 20px;
+    border-radius: 20px;
+    border-width: 3px;
 }
 
-.filter_icon  {
+.filter_elements i {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin: 15px;
+    color: var(--back_blue)
 }
 
-#filter {
-    width: 30px
+.filter_elements h3 {
+    margin-right: 10px;
 }
 
 
