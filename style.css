@@ -1,18 +1,33 @@
 /* Roots of the CSS code and static properties */ 
 
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
-}
-
-body {
-    max-width: 1400px;
-    margin: 2.5em;
 }
 
 :root {
     --back_blue: #0065FC;
     --light-blue: #DEEBFF;
     --back_grey: #F2F2F2;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 header {
@@ -32,33 +47,10 @@ header {
     background-color: var(--back_blue);
 }
 
-.noWrap {
-    flex-wrap: nowrap;
-}
-
-.flexStart {
-    justify-content: flex-start;
-}
-
-.flexEnd {
-    justify-content: flex-end;
-}
-
 .flexCenter {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.spaceBetwn {
-    justify-content: space-between;
-}
-
-.noWrap {
-    flex-wrap: nowrap;
-}
-
-.noDecorations {
-    text-decoration: none;
 }
 
 .noBorder {
@@ -75,18 +67,40 @@ header {
     border-color: var(--back_grey);
 }
 
-.inputNoActiveBorder:focus {
-    outline: none;
-}
-
 .blueColor {
     color: var(--back_blue);
 }
 
-/* Css code for the main section of the HTML */
+/* Css code for the nav section */
 
-.flexCol {
-    flex-flow: column;
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+nav a:hover {
+    color: var(--back_blue);
+    border-top: solid var(--back_blue);
+
+}
+
+nav a {
+    margin: 0 20px;
+}
+
+
+nav img {
+    object-fit: contain;
+    width: 75px;
+    height: 20px;
+}
+
+/* Css code for the "find a place for your holidays" section*/ 
+
+.find_a_place h2 {
+    margin: 7px 0;
 }
 
 .cityCenter p {
@@ -97,36 +111,10 @@ header {
     margin-bottom: 5px;
 }
 
-
-nav {
-    justify-content: space-between;
-}
-
-nav a:hover {
-    color: var(--back_blue);
-    border-top: solid var(--back_blue);
-    padding-top: 22px;
-}
-
-nav a {
-    margin-left: 3em;
-    padding-right: 15px
-}
-
-input::placeholder{
-    font-weight: bold;
-    color:black
-}
-
-nav img {
-    object-fit: contain;
-    width: 75px;
-    height: 20px;
-}
-
 .search-bar {
     width: 320px;
-    height: 45px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .icon {
@@ -136,16 +124,11 @@ nav img {
     border: none;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
-    margin-left:0
-}
-
-.paddingLeft {
-    padding-left: 0.6em;
 }
 
 .search-button {
     height: 100%;
-    padding-right: 15px;
+    padding: 0 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
@@ -156,13 +139,21 @@ nav img {
     cursor: pointer;
 }
 
+input::placeholder{
+    font-weight: bold;
+    color:black;
+    padding: 15px;
+    border: none;
+}
+
+.inputNoActiveBorder:focus {
+    outline: none;
+}
+
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
 
 .filter_section {
     width: auto;
-    margin-left: 0;
-    margin-top: 30px;
-    margin-bottom: 30px;
     justify-content: flex-start;
 }
 
@@ -171,9 +162,13 @@ nav img {
     align-items: center;
     height: 40px;
     width: auto;
-    margin: 20px;
+    margin: 25px;
     border-radius: 20px;
     border-width: 3px;
+}
+
+.filter_elements:hover {
+    color: var(--back_blue);
 }
 
 .filter_elements i {
@@ -184,7 +179,7 @@ nav img {
 }
 
 .filter_elements h3 {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 
@@ -193,6 +188,7 @@ nav img {
 .info_section {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 
@@ -209,20 +205,16 @@ nav img {
 
 
 
-/* two grey sections in the middle */ 
+/* two grey boxes in the main section */ 
 
 .main_part {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .renting_box {
-    width: 70%;
-    height: 626px;
+    width: 67%;
     margin-right: 20px;
     padding: 30px 40px;
 }
@@ -238,32 +230,41 @@ nav img {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .renting_card {
-    display: flex;
-    flex-wrap: wrap;
-    height: 200px;
-    background-color: #FFFFFF;
+    overflow: hidden; 
+    margin: 15px 0;
+    width: 31%;
+    height: 230px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    cursor: pointer;
+    border: 5px solid white;
 }
 
-.renting_card img {
-    width: 100%;
-    object-fit: contain;
+.renting_card_img {
+    height: 60%;
 }
 
 .informations_container {
-    position: relative;
-    background-color: white;
-    bottom: 30px;
+    padding: 10px 15px;
 }
 
-.informations_container * {
-    margin-top: 0;
-    margin-bottom: 0;
+.informations_container p {
+    margin: 5px 0;
+}
+
+.renting_stars .blue {
+    color: var(--back_blue);
+}
+
+.renting_stars .grey {
+    color: var(--back_grey);
 }
 
 .greyStar {
@@ -275,9 +276,9 @@ nav img {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--back_grey);
-    padding-bottom: 2em;
+    padding: 50px;
 }
 
 .list {
@@ -286,9 +287,7 @@ footer {
 }
 
 .list a {
-    text-decoration: none;
-    margin-bottom: 0.5em;
-    font-size: 1em;
+    margin: 5px 0;
 }
 
 .list a:hover {
@@ -300,7 +299,4 @@ footer {
 }
 
 
-* {
-    font-family: 'Raleway', sans-serif;
-}
 

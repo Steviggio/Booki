@@ -11,11 +11,11 @@
 </head>
 <body >
     <header>
-        <nav class="flexCenter">
+        <nav>
             <img src="assets/logo/Booki.png" alt="Booki logo for header">
-            <div>
-                <a class="noDecorations" href="">Hébergement</a>
-                <a class="noDecorations"  href="">Activités</a>
+            <div class="flexCenter">
+                <a  href="">Hébergement</a>
+                <a  href="">Activités</a>
             </div>
         </nav>
     </header>
@@ -23,7 +23,7 @@
     <main>
         <section class="first-section">
             <div>
-                <div class="flexCol">
+                <div class="find_a_place">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p >En plein centre-ville ou en pleine nature</p>
                 </div>
@@ -33,16 +33,16 @@
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
                     <div>
-                        <input class="inputNoActiveBorder paddingLeft flexCenter noBorder" type="text" placeholder="Marseille, France">
+                        <input class="inputNoActiveBorder flexCenter noBorder" type="text" placeholder="Marseille, France">
                     </div>
-                    <div class="search-button paddingLeft blueBackground flexCenter noBorder">
+                    <div class="search-button  blueBackground flexCenter noBorder">
                         Rechercher</p>
                     </div>
                 </article>
 
                 <!-- Filters part -->
 
-                <div class="filter_section noWrap spaceBetwn flexCenter" type="filter_section">
+                <div class="filter_section flexCenter" type="filter_section">
                     <h3>Filtres</h3>
                     <div class="filter_elements flexCenter greyBorder spaceBetwn">
                         <i class="fa-solid fa-money-bill-wave"></i>
@@ -82,18 +82,71 @@
 
                 <div class="cards">
 
-                    <div class="renting_card boxesRadius noDecorations">
-                        <a href="#" class="">
-                            <figure>
-                                <img src="/assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                            </figure>
-                            <div class="informations_container">
-                                <h4>Auberge La cannebière</h4>
-                                <p>Nuit à partir de 25€</p>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star greyStar"></i>
-                            </div>
-                        </a>
-                </div>
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Auberge La Canebière</h4>
+                            <p>Nuit à partir de 25<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
+
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Hôtel du port</h4>
+                            <p>Nuit à partir de 52<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
+
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Hôtel Les mouettes</h4>
+                            <p>Nuit à partir de 76<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
+
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de 46<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
+
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Auberge Le Panier</h4>
+                            <p>Nuit à partir de 23<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
+
+                    <a href="#" class="renting_card boxesRadius">
+                        <figure class="renting_card_img">
+                            <img src="/assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        </figure>
+                        <div class="informations_container ">
+                            <h4>Hôtel Chez Amina</h4>
+                            <p>Nuit à partir de 96<span>€</span></p>
+                            <figure class="renting_stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
+                        </div>
+                    </a>
 
                 </div>
             </div>
@@ -108,7 +161,7 @@
 
     <!-- Footer section -->
 
-    <footer class="greyBackground flexCenter">
+    <footer class="greyBackground">
         <div class="list ">
             <h2>À propos</h2>
             <a href="">Fonctionnement du site</a>
