@@ -67,8 +67,12 @@ header {
     border-color: var(--back_grey);
 }
 
-.blueColor {
+.blue {
     color: var(--back_blue);
+}
+
+.grey {
+    color: var(--back_grey);
 }
 
 /* Css code for the nav section */
@@ -304,14 +308,6 @@ input::placeholder{
 
 .informations_container p {
     margin: 5px 0;
-}
-
-.stars .blue {
-    color: var(--back_blue);
-}
-
-.stars .grey {
-    color: var(--back_grey);
 }
 
 

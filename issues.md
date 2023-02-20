@@ -1,12 +1,35 @@
-> Ensemble des objectifs du projet :
+> Ensemble des objectifs du projet / Project issues to check :
 
-1- Card X
-2- Flex sur l'hébergement X
-3- anchor sur l'hébergement     
-4- Validation W3C 
-5- balise sémantiques 
-6- Breakpoints 
-7- "Afficher plus" don't forget about this element in the main part 
-8-  Adjust the top border of the header links for the hover effect
-9- Hover effect of the filter elements 
-10- 
+- Card Y
+- Flex sur l'hébergement Y
+- anchor sur l'hébergement Y
+- Validation W3C Y (still need to check along the coding process)
+- balise sémantiques Y 
+- Breakpoints N
+
+- Header / Nav  
+    - Adjust the top border of the header links for the hover effect N
+
+- Search bar:
+    - "search form" implementation in the HTML file Y  
+    - Adding the "magnifying glass" icon for the reponsive design of the "search form" 
+
+- Cards:
+    - the entire card is clickable Y 
+    Renting Cards :
+    - shadow effect on the card Y 
+    - "Alt" attributes N
+    - Border radius on the img Y 
+    - Afficher plus element N
+    - title Y
+    Popular cards :
+    - title and icon Y 
+    
+- Containers display:
+    - leaving a space between the two card section Y 
+    - background colors are reversed for the mobile version
+
+- Activities in Marseille :
+    - Alt attributes N
+    - 
+
