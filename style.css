@@ -311,6 +311,46 @@ input::placeholder{
 }
 
 
+/* Css code for the activities part */
+
+.activities_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities_box h2 {
+    margin-bottom: 20px;
+}
+
+.activities_card_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activities_card {
+    overflow: hidden; 
+    margin: 0;
+    width: 22%;
+    height: 450px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    cursor: pointer;
+}
+
+.activities_card_img {
+    height: 90%;
+}
+
+.activities_informations_container {
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+
 /* Css code of the footer section */ 
 
 footer {
