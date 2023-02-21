@@ -316,6 +316,7 @@ input::placeholder{
 .activities_box {
     display: flex;
     flex-direction: column;
+    margin: 60px 10px;
 }
 
 .activities_box h2 {
@@ -355,9 +356,15 @@ input::placeholder{
 
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: var(--back_grey);
     padding: 50px;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 76%
 }
 
 .list {
