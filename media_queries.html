@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
     <script src="https://kit.fontawesome.com/6a43e37d3a.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Booki</title>
@@ -28,15 +28,16 @@
                     <p >En plein centre-ville ou en pleine nature</p>
                 </div>
 
-                <form class="search_bar" action="">
-                    <div class="greyBackground icon ">
+                <article class="greyBorder search-bar flexCenter">
+                    <div class="greyBackground icon flexCenter noBorder">
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
-                        <input class="inputNoActiveBorder greyBorder noBorder" type="text" placeholder="Marseille, France">
-                    <div class="search-button  blueBackground ">
+                    <div>
+                        <input class="inputNoActiveBorder flexCenter noBorder" type="text" placeholder="Marseille, France">
+                    </div>
+                    <div class="search-button  blueBackground flexCenter noBorder">
                         Rechercher</p>
                     </div>
-                </form>
                 </article>
 
                 <!-- Filters part -->
@@ -148,9 +149,6 @@
                     </a>
 
                 </div>
-
-                <h2 class="">Afficher plus</h2>
-
             </div>
 
             <div class="popular_box greyBackground boxesRadius" type="most_popular_places" >

@@ -63,7 +63,7 @@ header {
 
 .greyBorder {
     border: solid 1px;
-
+    border-radius: 15px;
     border-color: var(--back_grey);
 }
 
@@ -101,7 +101,7 @@ nav img {
     height: 20px;
 }
 
-/* Css code for the "find a place for your holidays" part*/ 
+/* Css code for the "find a place for your holidays" section*/ 
 
 .find_a_place h2 {
     margin: 7px 0;
@@ -115,33 +115,24 @@ nav img {
     margin-bottom: 5px;
 }
 
-
-/* CSS code for the search bar part */ 
-
-form {
-    display: flex;
-    height: 49px;
-    width: 40%;
-    margin: 15px 0;
+.search-bar {
+    width: 320px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .icon {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 9%;
+    width: 100%;
+    height: 100%;
     border: none;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
 }
 
-
 .search-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-    padding: 0px 16px;
+    padding: 0 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
@@ -152,16 +143,10 @@ form {
     cursor: pointer;
 }
 
-
-form input {
-    width: 35%
-}
-
 input::placeholder{
-    font-size: 15px;
     font-weight: bold;
     color:black;
-    padding: 10px;
+    padding: 15px;
     border: none;
 }
 
@@ -172,9 +157,8 @@ input::placeholder{
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
 
 .filter_section {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+    width: auto;
+    justify-content: flex-start;
 }
 
 .filter_section div {
@@ -186,6 +170,7 @@ input::placeholder{
     border-radius: 20px;
     border-width: 3px;
 }
+
 
 
 .filter_elements i {
@@ -222,7 +207,7 @@ input::placeholder{
 
 
 
-/* Renting section */ 
+/* two grey boxes in the main section */ 
 
 .main_part {
     display: flex;
@@ -240,40 +225,6 @@ input::placeholder{
     margin-top: 0;
     margin-bottom: 20px;
 }
-
-
-.Marseille_cards {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.renting_card {
-    overflow: hidden; 
-    margin: 15px 0;
-    width: 31%;
-    height: 230px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    cursor: pointer;
-    border: 5px solid white;
-}
-
-.renting_card_img {
-    height: 60%;
-}
-
-.informations_container {
-    padding: 10px 15px;
-}
-
-.informations_container p {
-    margin: 5px 0;
-}
-
-
-/* Popular box */ 
 
 .popular_box {
     width: 30%;
@@ -327,6 +278,36 @@ input::placeholder{
 
 .popular_title i {
     color: var(--back_blue);
+}
+
+.Marseille_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.renting_card {
+    overflow: hidden; 
+    margin: 15px 0;
+    width: 31%;
+    height: 230px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+.renting_card_img {
+    height: 60%;
+}
+
+.informations_container {
+    padding: 10px 15px;
+}
+
+.informations_container p {
+    margin: 5px 0;
 }
 
 
@@ -403,6 +384,9 @@ footer {
     font-size: 1.2em;
 }
 
+
+/* Display for tablet */
+
 @media all and (min-width: 768px) and (max-width: 992px) {
 
 
@@ -416,11 +400,10 @@ footer {
     font-size: 22px;
 }
 
-    /* Search bar CSS code for tablet */ 
+    /* Seacrh bar CSS code for tablet */ 
 
-    form {
-        margin: 15px 0;
-        width: 85%;
+    .search-bar {
+        margin: 15px 0
     }
 
     /* Filter part CSS code for tablet */ 
@@ -494,3 +477,8 @@ footer {
 
 }
 
+/* Display for mobile */ 
+
+@media (max-width: 768) {
+
+}
