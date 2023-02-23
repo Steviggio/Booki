@@ -8,14 +8,15 @@
 - Breakpoints Y
 
 - Header / Nav  
-    - Adjust the top border of the header links for the hover effect N
+    - Adjust the top border of the header links for the hover effect Y
 
 - Search bar:
     - "search form" implementation in the HTML file Y  
-    - Adding the "magnifying glass" icon for the reponsive design of the "search form" N
+    - Adding the "magnifying glass" icon for the reponsive design of the "search form" Y
 
 - Cards:
     - the entire card is clickable Y 
+    
     Renting Cards :
     - shadow effect on the card Y 
     - "Alt" attributes N
@@ -32,5 +33,14 @@
 
 - Activities in Marseille :
     - Alt attributes N
-    - 
+    
+- Responsive design for tablets : 
+    - Adding padding to the "display more" and "most popular" texts N
+
+
+- Responsive design for mobile : 
+    - Nav border displayed beneath the links N 
+    - Column display for the divs N 
+    - Switching to the magnifying glass in the search bar N
+    - Booki logo in the center of the header N
 

@@ -31,9 +31,6 @@ img {
     object-position: center;
 }
 
-header {
-    margin-bottom: 50px;
-}
 
 .boldText {
     font-weight: bold;
@@ -80,14 +77,10 @@ header {
 
 header nav {
     height: 80px;
+    width: 98%;
     display: flex;
     align-items: center;
-}
-
-nav {
-    display: flex;
     justify-content: space-between;
-    height: 100%;
 }
 
 nav div {
@@ -158,6 +151,10 @@ form {
     border-bottom-right-radius: 10px;
     color: white;
     font-weight: bold
+}
+
+.search-button i {
+    display: none;
 }
 
 .search-button:hover {
@@ -524,9 +521,10 @@ footer {
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     
-
-
+    body section {
+        flex-direction: column;
+    }
 }
 
