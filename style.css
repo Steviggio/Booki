@@ -7,6 +7,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 :root {
     --back_blue: #0065FC;
     --light-blue: #DEEBFF;
@@ -77,21 +78,32 @@ header {
 
 /* Css code for the nav section */
 
+header nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    height: 100%;
+}
+
+nav div {
+    height: 100%;
 }
 
 nav a:hover {
     color: var(--back_blue);
     border-top: solid var(--back_blue);
-
 }
 
 nav a {
+    height: 100%;
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -184,7 +196,7 @@ input::placeholder{
     height: 50px;
     width: auto;
     margin: 10px 0;
-    border-radius: 20px;
+    border-radius: 30px;
     border-width: 3px;
 }
 
@@ -192,7 +204,7 @@ input::placeholder{
 .filter_elements i {
     display: flex;
     flex-direction: row;
-    margin: 12px;
+    margin: 10px 15px;
     color: var(--back_blue)
 }
 
@@ -406,6 +418,7 @@ footer {
 
 .list h2 {
     font-size: 1.2em;
+    margin-bottom: 12px;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -472,6 +485,18 @@ footer {
         gap: 10px;
     }
 
+    .popular_place {
+        height: 150px;
+    }
+
+    .popular_informations_container h3 {
+        font-size: 1em;
+    }
+
+    .popular_informations_container {
+        font-size: 0.9em;
+    }
+
     /* Activities part CSS code for tablet */
 
     .activities_box h2 {
@@ -496,6 +521,12 @@ footer {
     .footer_list {
         width: 85%
     }
+
+}
+
+@media all and (max-width: 768px) {
+    
+
 
 }
 

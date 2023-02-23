@@ -7,6 +7,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 :root {
     --back_blue: #0065FC;
     --light-blue: #DEEBFF;
@@ -63,7 +64,7 @@ header {
 
 .greyBorder {
     border: solid 1px;
-    border-radius: 15px;
+
     border-color: var(--back_grey);
 }
 
@@ -77,21 +78,32 @@ header {
 
 /* Css code for the nav section */
 
+header nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
 nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    height: 100%;
+}
+
+nav div {
+    height: 100%;
 }
 
 nav a:hover {
     color: var(--back_blue);
     border-top: solid var(--back_blue);
-
 }
 
 nav a {
+    height: 100%;
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -101,7 +113,7 @@ nav img {
     height: 20px;
 }
 
-/* Css code for the "find a place for your holidays" section*/ 
+/* Css code for the "find a place for your holidays" part*/ 
 
 .find_a_place h2 {
     margin: 7px 0;
@@ -115,24 +127,33 @@ nav img {
     margin-bottom: 5px;
 }
 
-.search-bar {
-    width: 320px;
-    height: 40px;
-    margin-top: 10px;
+
+/* CSS code for the search bar part */ 
+
+form {
+    display: flex;
+    height: 49px;
+    width: 40%;
+    margin: 15px 0;
 }
 
 .icon {
+    display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    width: 9%;
     border: none;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
 }
 
+
 .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    padding: 0 15px;
+    padding: 0px 16px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
@@ -143,10 +164,16 @@ nav img {
     cursor: pointer;
 }
 
+
+form input {
+    width: 35%
+}
+
 input::placeholder{
+    font-size: 15px;
     font-weight: bold;
     color:black;
-    padding: 15px;
+    padding: 10px;
     border: none;
 }
 
@@ -157,31 +184,36 @@ input::placeholder{
 /* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
 
 .filter_section {
-    width: auto;
-    justify-content: flex-start;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .filter_section div {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
     width: auto;
-    margin: 25px;
-    border-radius: 20px;
+    margin: 10px 0;
+    border-radius: 30px;
     border-width: 3px;
 }
-
 
 
 .filter_elements i {
     display: flex;
     flex-direction: row;
-    margin: 15px;
+    margin: 10px 15px;
     color: var(--back_blue)
 }
 
 .filter_elements h3 {
     margin-right: 15px;
+}
+
+.filter_elements:hover {
+    background-color: #DEEBFF;
 }
 
 
@@ -207,7 +239,7 @@ input::placeholder{
 
 
 
-/* two grey boxes in the main section */ 
+/* Renting section */ 
 
 .main_part {
     display: flex;
@@ -225,6 +257,40 @@ input::placeholder{
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+
+.Marseille_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.renting_card {
+    overflow: hidden; 
+    margin: 15px 0;
+    width: 31%;
+    height: 230px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+.renting_card_img {
+    height: 60%;
+}
+
+.informations_container {
+    padding: 10px 15px;
+}
+
+.informations_container p {
+    margin: 5px 0;
+}
+
+
+/* Popular box */ 
 
 .popular_box {
     width: 30%;
@@ -278,36 +344,6 @@ input::placeholder{
 
 .popular_title i {
     color: var(--back_blue);
-}
-
-.Marseille_cards {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.renting_card {
-    overflow: hidden; 
-    margin: 15px 0;
-    width: 31%;
-    height: 230px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    cursor: pointer;
-    border: 5px solid white;
-}
-
-.renting_card_img {
-    height: 60%;
-}
-
-.informations_container {
-    padding: 10px 15px;
-}
-
-.informations_container p {
-    margin: 5px 0;
 }
 
 
@@ -382,10 +418,8 @@ footer {
 
 .list h2 {
     font-size: 1.2em;
+    margin-bottom: 12px;
 }
-
-
-/* Display for tablet */
 
 @media all and (min-width: 768px) and (max-width: 992px) {
 
@@ -400,10 +434,11 @@ footer {
     font-size: 22px;
 }
 
-    /* Seacrh bar CSS code for tablet */ 
+    /* Search bar CSS code for tablet */ 
 
-    .search-bar {
-        margin: 15px 0
+    form {
+        margin: 15px 0;
+        width: 85%;
     }
 
     /* Filter part CSS code for tablet */ 
@@ -450,6 +485,18 @@ footer {
         gap: 10px;
     }
 
+    .popular_place {
+        height: 150px;
+    }
+
+    .popular_informations_container h3 {
+        font-size: 1em;
+    }
+
+    .popular_informations_container {
+        font-size: 0.9em;
+    }
+
     /* Activities part CSS code for tablet */
 
     .activities_box h2 {
@@ -477,8 +524,9 @@ footer {
 
 }
 
-/* Display for mobile */ 
+@media all and (max-width: 768px) {
+    
 
-@media (max-width: 768) {
 
 }
+
