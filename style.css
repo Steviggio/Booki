@@ -421,7 +421,7 @@ footer {
     margin-bottom: 12px;
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media(max-width: 992px) {
 
 
     body {
@@ -523,10 +523,40 @@ footer {
     }
 
 }
+@media (max-width: 768px) {
 
-@media all and (max-width: 768px) {
+    /* CSS code for the header */ 
     
+        header {
+            margin-top: 20px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+    
+        .navbar {
+            flex-direction: column;
+        }
+    
+        nav div {
+            width: 100%;
+        }
+    
+        nav a {
+            justify-content: center;
+            width: 50%;
+            height: 60px;
+            margin: 0;
+        }
+    
+        nav a:hover {
+            border-top: none;
+            border-bottom: solid var(--back_blue);
+        }
+    
+        nav img {
+            margin-bottom: 15px;
+        }
 
-
-}
-
+    }

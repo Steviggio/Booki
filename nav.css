@@ -85,13 +85,16 @@ header nav {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     height: 100%;
 }
 
 nav div {
     height: 100%;
+}
+
+.nav_links {
+    display: flex;
 }
 
 nav a:hover {
@@ -111,4 +114,45 @@ nav img {
     object-fit: contain;
     width: 75px;
     height: 20px;
+}
+
+
+/* CSS Code for mobile*/ 
+
+@media (max-width: 768px) {
+
+/* CSS code for the header */ 
+
+    header {
+        margin-top: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav div {
+        width: 100%;
+    }
+
+    nav a {
+        justify-content: center;
+        width: 50%;
+        height: 60px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: solid var(--back_blue);
+    }
+
+    nav img {
+        margin-bottom: 15px;
+    }
+
 }
