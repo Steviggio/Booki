@@ -16,9 +16,9 @@
 
 <body>
 	<header>
-		<nav>
+		<nav class="navbar">
 			<img src="assets/logo/Booki.png" alt="Booki logo for header">
-			<div class="flexCenter">
+			<div class="nav_links">
 				<a href="#renting_in_marseille">Hébergement</a>
 				<a href="#activities_in_marseille">Activités</a>
 			</div>
@@ -39,30 +39,34 @@
 					</div>
 					<input class="inputNoActiveBorder greyBorder noBorder" type="text" placeholder="Marseille, France">
 					<div class="search-button  blueBackground ">
-						Rechercher</p>
+						<p class="search_text">Rechercher</p> <i
+							class="fa-solid fa-magnifying-glass button_magnifying_glass"></i>
 					</div>
 				</form>
-				</article>
+
 
 				<!-- Filters part -->
 
-				<div class="filter_section flexCenter" type="filter_section">
-					<h3>Filtres</h3>
-					<div class="filter_elements flexCenter greyBorder spaceBetwn">
-						<i class="fa-solid fa-money-bill-wave"></i>
-						<h3>Économique</h3>
-					</div>
-					<div class="filter_elements flexCenter greyBorder spaceBetwn">
-						<i class="fa-solid fa-person"></i>
-						<h3>Familial</h3>
-					</div>
-					<div class="filter_elements flexCenter greyBorder spaceBetwn">
-						<i class="fa-solid fa-heart"></i>
-						<h3>Romantique</h3>
-					</div>
-					<div class="filter_elements flexCenter greyBorder spaceBetwn">
-						<i class="fa-solid fa-dog"></i>
-						<h3>Animaux autorisés</h3>
+				<div class="filter_section" type="filter_section">
+					<h3 id="filter_section_title">Filtres</h3>
+
+					<div class="filter_bars">
+						<div class="filter_elements greyBorder">
+							<i class="fa-solid fa-money-bill-wave"></i>
+							<h3>Économique</h3>
+						</div>
+						<div class="filter_elements greyBorder">
+							<i class="fa-solid fa-person"></i>
+							<h3>Familial</h3>
+						</div>
+						<div class="filter_elements greyBorder">
+							<i class="fa-solid fa-heart"></i>
+							<h3>Romantique</h3>
+						</div>
+						<div class="filter_elements greyBorder">
+							<i class="fa-solid fa-dog"></i>
+							<h3>Animaux autorisés</h3>
+						</div>
 					</div>
 				</div>
 
@@ -70,9 +74,10 @@
 
 				<div class="info_section flexCenter" type="informations_section">
 					<i id="info_letter" class="fa-solid fa-info greyBorder blue boxesRadius"></i>
-					<div class="flexEnd">Plus de 500 logements sont disponibles dans cette ville</div>
+					<div class="flexEnd"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
 				</div>
 			</div>
+
 		</section>
 
 		<!-- Renting in Marseille section -->
@@ -82,20 +87,20 @@
 
 			<div class="renting_box greyBackground boxesRadius" type="staying_in_marseille">
 
-				<h2>Hébergement à Marseille</h2>
+				<h2 class="renting-title">Hébergement à Marseille</h2>
 
 				<div class="Marseille_cards">
 
 					<a href="#" class="renting_card boxesRadius">
 						<figure class="renting_card_img">
-							<img src="/assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+							<img src="/assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hostel bunks with a great view">
 						</figure>
 						<div class="informations_container ">
 							<h4>Auberge La Canebière</h4>
 							<p>Nuit à partir de 25<span>€</span></p>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -106,9 +111,9 @@
 						<div class="informations_container ">
 							<h4>Hôtel du port</h4>
 							<p>Nuit à partir de 52<span>€</span></p>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -119,9 +124,9 @@
 						<div class="informations_container ">
 							<h4>Hôtel Les mouettes</h4>
 							<p>Nuit à partir de 76<span>€</span></p>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -132,9 +137,9 @@
 						<div class="informations_container ">
 							<h4>Hôtel de la mer</h4>
 							<p>Nuit à partir de 46<span>€</span></p>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -145,9 +150,9 @@
 						<div class="informations_container ">
 							<h4>Auberge Le Panier</h4>
 							<p>Nuit à partir de 23<span>€</span></p>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -185,9 +190,9 @@
 								<h3>Hôtel Le soleil du matin</h3>
 								<p>Nuit à partir de 128<span>€</span></p>
 							</div>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -200,9 +205,9 @@
 								<h3>Chambre d'hôtes Au coeur de l'eau</h3>
 								<p>Nuit à partir de 71<span>€</span></p>
 							</div>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -215,9 +220,9 @@
 								<h3>Hôtel Bleu et Blanc</h3>
 								<p>Nuit à partir de 68<span>€</span></p>
 							</div>
-							<figure class="stars"><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
+							<figure class="stars"><i class="fa-solid fa-star blue"></i><i
 									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i
-									class="fa-solid fa-star grey"></i></figure>
+									class="fa-solid fa-star blue"></i><i class="fa-solid fa-star grey"></i></figure>
 						</div>
 					</a>
 
@@ -236,7 +241,7 @@
 
 			<div class="activities_box">
 
-				<h2 id="activities_in_marseille">Activités à Marseille</h2>
+				<h2 id="activities_in_marseille_title">Activités à Marseille</h2>
 
 				<div class="activities_card_container">
 

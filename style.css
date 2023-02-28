@@ -1,4 +1,4 @@
-/* Roots of the CSS code and static properties */ 
+/* Roots of the CSS code and static properties */
 
 * {
     box-sizing: border-box;
@@ -37,7 +37,7 @@ header {
 
 .boldText {
     font-weight: bold;
-    color:black;
+    color: black;
 }
 
 .greyBackground {
@@ -64,7 +64,6 @@ header {
 
 .greyBorder {
     border: solid 1px;
-
     border-color: var(--back_grey);
 }
 
@@ -78,6 +77,8 @@ header {
 
 /* Css code for the nav section */
 
+/* Css code for the nav section */
+
 header nav {
     height: 80px;
     display: flex;
@@ -85,13 +86,16 @@ header nav {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     height: 100%;
 }
 
 nav div {
     height: 100%;
+}
+
+.nav_links {
+    display: flex;
 }
 
 nav a:hover {
@@ -113,7 +117,7 @@ nav img {
     height: 20px;
 }
 
-/* Css code for the "find a place for your holidays" part*/ 
+/* Css code for the "find a place for your holidays" part*/
 
 .find_a_place h2 {
     margin: 7px 0;
@@ -128,12 +132,9 @@ nav img {
 }
 
 
-/* CSS code for the search bar part */ 
+/* CSS code for the search bar part */
 
-form {
-    display: flex;
-    height: 49px;
-    width: 40%;
+.search_bar {
     margin: 15px 0;
 }
 
@@ -141,7 +142,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 9%;
+    width: 50px;
     border: none;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
@@ -164,15 +165,24 @@ form {
     cursor: pointer;
 }
 
-
-form input {
-    width: 35%
+form {
+    display: flex;
+    height: 49px;
+    width: 40%
 }
 
-input::placeholder{
+form input {
+    width: 194px
+}
+
+.button_magnifying_glass {
+    display: none;
+}
+
+input::placeholder {
     font-size: 15px;
     font-weight: bold;
-    color:black;
+    color: black;
     padding: 10px;
     border: none;
 }
@@ -181,30 +191,34 @@ input::placeholder{
     outline: none;
 }
 
-/* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */ 
+/* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */
 
 .filter_section {
-    width: 70%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.filter_section div {
+
+.filter_elements {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 40px;
     width: auto;
-    margin: 10px 0;
-    border-radius: 30px;
+    margin: 20px;
+    border-radius: 20px;
     border-width: 3px;
 }
 
+.filter_bars {
+    display: flex;
+
+}
 
 .filter_elements i {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 15px;
+    font-size: 20px;
+    margin: 15px;
     color: var(--back_blue)
 }
 
@@ -217,7 +231,7 @@ input::placeholder{
 }
 
 
-/* Css code for "i" line */ 
+/* Css code for "i" line */
 
 .info_section {
     display: flex;
@@ -228,7 +242,7 @@ input::placeholder{
 
 #info_letter {
     display: flex;
-    width:24px;
+    width: 24px;
     height: 24px;
     justify-content: center;
     align-items: center;
@@ -239,7 +253,7 @@ input::placeholder{
 
 
 
-/* Renting section */ 
+/* Renting section */
 
 .main_part {
     display: flex;
@@ -253,11 +267,20 @@ input::placeholder{
     padding: 30px 40px;
 }
 
-.renting_box h2 {
-    margin-top: 0;
+.renting-title {
     margin-bottom: 20px;
+    width: fit-content;
 }
 
+.display_more {
+    margin-top: 30px;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.display_more:hover {
+    cursor: pointer;
+}
 
 .Marseille_cards {
     width: 100%;
@@ -267,7 +290,7 @@ input::placeholder{
 }
 
 .renting_card {
-    overflow: hidden; 
+    overflow: hidden;
     margin: 15px 0;
     width: 31%;
     height: 230px;
@@ -282,7 +305,8 @@ input::placeholder{
 }
 
 .informations_container {
-    padding: 10px 15px;
+    padding: 5px 15px;
+    font-size: 0.9em;
 }
 
 .informations_container p {
@@ -290,11 +314,10 @@ input::placeholder{
 }
 
 
-/* Popular box */ 
+/* Popular box */
 
 .popular_box {
     width: 30%;
-    margin-right: 20px;
     padding: 30px 40px;
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +333,7 @@ input::placeholder{
 
 .popular_place {
     display: flex;
-    overflow: hidden; 
+    overflow: hidden;
     margin: 15px 0;
     width: 100%;
     height: 170px;
@@ -338,7 +361,7 @@ input::placeholder{
 }
 
 .popular_title {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -346,13 +369,22 @@ input::placeholder{
     color: var(--back_blue);
 }
 
+.popular_informations_container h3 {
+    font-size: 1em;
+}
 
 /* Css code for the activities part */
+
+#activities_in_marseille {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
 .activities_box {
     display: flex;
     flex-direction: column;
-    margin: 60px 10px;
+    margin: 60px 0;
 }
 
 .activities_box h2 {
@@ -367,7 +399,7 @@ input::placeholder{
 }
 
 .activities_card {
-    overflow: hidden; 
+    overflow: hidden;
     margin: 0;
     width: 22%;
     height: 450px;
@@ -388,7 +420,7 @@ input::placeholder{
 }
 
 
-/* Css code of the footer section */ 
+/* Css code of the footer section */
 
 footer {
     display: flex;
@@ -425,30 +457,39 @@ footer {
 
 
     body {
-        margin: auto 70px;
+        margin: auto 30px;
     }
 
-/* Css code for the "find a place for your holidays" part*/ 
+    /* Css code for the "find a place for your holidays" part*/
 
-.find_a_place h2 {
-    font-size: 22px;
-}
+    .find_a_place h2 {
+        font-size: 22px;
+    }
 
-    /* Search bar CSS code for tablet */ 
+    /* Search bar CSS code for tablet */
 
     form {
         margin: 15px 0;
-        width: 85%;
+        width: 75%;
     }
 
-    /* Filter part CSS code for tablet */ 
+    /* Filter part CSS code for tablet */
 
     .filter_section {
-        width: 98%;
+        width: 100%;
+        flex-wrap: nowrap;
     }
 
-    .filter_section div {
-        margin: 20px 8px;
+    .filter_section_title {
+        margin-right: 15px
+    }
+
+    .filter_elements_container {
+        gap: 25px;
+    }
+
+    .filter_elements i {
+        margin: 8px
     }
 
     .filter_elements h3 {
@@ -456,13 +497,12 @@ footer {
     }
 
 
-    /* Renting in marseille CSS code for tablet */ 
-    
+    /* Renting in marseille CSS code for tablet */
 
     .main_part {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
     }
 
@@ -471,7 +511,16 @@ footer {
         margin: 20px 0
     }
 
-    /* Popular part CSS code for tablet */ 
+    .display_more {
+        font-size: 18px;
+    }
+
+    .informations_container {
+        font-size: 0.8em;
+    }
+
+    /* Popular part CSS code for tablet */
+
 
     .popular_box {
         width: 100%;
@@ -489,17 +538,20 @@ footer {
         height: 150px;
     }
 
-    .popular_informations_container h3 {
-        font-size: 1em;
-    }
-
     .popular_informations_container {
         font-size: 0.9em;
     }
 
     /* Activities part CSS code for tablet */
 
-    .activities_box h2 {
+    #activities_in_marseille {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #activities_in_marseille .activities_box h2 {
         margin-bottom: 35px;
     }
 
@@ -516,47 +568,220 @@ footer {
     }
 
 
-    /* Footer CSS code for tablet */ 
+    /* Footer CSS code for tablet */
 
     .footer_list {
         width: 85%
     }
 
 }
+
+/*CSS code for mobile */
+
 @media (max-width: 768px) {
 
-    /* CSS code for the header */ 
-    
-        header {
-            margin-top: 20px;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-    
-        .navbar {
-            flex-direction: column;
-        }
-    
-        nav div {
-            width: 100%;
-        }
-    
-        nav a {
-            justify-content: center;
-            width: 50%;
-            height: 60px;
-            margin: 0;
-        }
-    
-        nav a:hover {
-            border-top: none;
-            border-bottom: solid var(--back_blue);
-        }
-    
-        nav img {
-            margin-bottom: 15px;
-        }
-
+    body {
+        margin: 0; 
+        scroll-behavior: smooth;
     }
+
+
+    /* CSS code for the header */
+
+    header {
+        margin-top: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav div {
+        width: 100%;
+        border-bottom: solid 1px var(--back_grey);
+    }
+
+    nav a {
+        justify-content: center;
+        width: 50%;
+        height: 60px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: solid var(--back_blue);
+    }
+
+    nav img {
+        margin-bottom: 15px;
+    }
+
+    /* Search bar Css code for mobile */
+
+    .find_a_place {
+        margin-left: 10px;
+    } 
+
+    .search_bar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search_text {
+        display: none;
+    }
+
+    .button_magnifying_glass {
+        display: contents;
+    }
+
+
+    /* Information line text  */
+
+    .info_section {
+        margin: 20px;
+    }
+
+    .info_section p {
+        padding-top: 13px;
+    }
+
+    #info_letter {
+        width: 28px;
+    }
+
+    /* Filter CSS code */
+
+    .filter_section {
+        width: 100%;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    #filter_section_title {
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+
+    .filter_bars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 0 10px;
+    }
+
+    .filter_elements {
+        width: 47%;
+        height: 50px;
+        font-size: 10px;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .filter_elements h3 {
+        font-size: 13px;
+    }
+
+    .filter_elements i {
+        font-size: 20px;
+    }
+
+    /* Section of Renting/popular boxes */
+
+    .main_part {
+        flex-direction: column-reverse;
+    }
+
+    /* Renting in Marseille  */
+
+    .Marseille_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .renting_box {
+        border-radius: 0;
+        background-color: white;
+        width: auto;
+    }
+
+    .renting_card {
+        width: 335px;
+        height: 200px;
+    }
+
+    .display_more {
+        display: none;
+    }
+
+    .renting-title {
+        margin-bottom: 5px;
+    }
+
+
+    /* Popular part Css code */
+
+    .popular_card {
+        flex-direction: column;
+    }
+
+    .popular_box {
+        border-radius: 0;
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .popular_informations_container h3 {
+        font-size: 1.1em;
+    }
+
+    .popular_title {
+        margin-bottom: 12px;
+    }
+
+
+    /* Activities box CSS code  */
+
+
+    .activities_box h2 {
+        margin-bottom: 0;
+        width: 130px;
+    }
+
+    .activities_card_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .activities_card {
+        height: 190px;
+        width: 330px;
+        gap: 50px;
+    }
+
+
+    /*Footer Css code for mobile  */
+
+    footer {
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 45px;
+    }
+
+    .footer_list {
+        flex-direction: column;
+    }
+
+    .list {
+        font-size: 0.9em;
+        margin-bottom: 25px;
+    }
+
+}
