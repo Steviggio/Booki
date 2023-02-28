@@ -3,7 +3,7 @@
 - Card Y
 - Flex sur l'hébergement Y
 - anchor sur l'hébergement Y
-- Validation W3C Y (still need to check along the coding process)
+- Validation W3C Y (still need to check along the coding process) 
 - balise sémantiques Y 
 - Breakpoints Y
 
@@ -29,18 +29,18 @@
     
 - Containers display:
     - leaving a space between the two card section Y 
-    - background colors are reversed for the mobile version N
+    - background colors are reversed for the mobile version Y
 
 - Activities in Marseille :
-    - Alt attributes N
+    - Alt attributes Y
     
 - Responsive design for tablets : 
     - Adding padding to the "display more" and "most popular" texts N
 
 
 - Responsive design for mobile : 
-    - Nav border displayed beneath the links N 
-    - Column display for the divs N 
-    - Switching to the magnifying glass in the search bar N
-    - Booki logo in the center of the header N
+    - Nav border displayed beneath the links Y
+    - Column display for the divs Y
+    - Switching to the magnifying glass in the search bar Y
+    - Booki logo in the center of the header Y
 
