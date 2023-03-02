@@ -132,6 +132,16 @@ nav img {
 
 /* CSS code for the search bar part */
 
+form {
+	display: flex;
+	height: 49px;
+	width: 40%
+}
+
+form input {
+	width: 194px
+}
+
 .search_bar {
 	margin: 15px 0;
 }
@@ -163,15 +173,6 @@ nav img {
 	cursor: pointer;
 }
 
-form {
-	display: flex;
-	height: 49px;
-	width: 40%
-}
-
-form input {
-	width: 194px
-}
 
 #button_magnifying_glass {
 	display: none;
@@ -189,7 +190,7 @@ input::placeholder {
 	outline: none;
 }
 
-/* propriété de la partie Rechercher: search-button paddingLeft blueBackground flexCenter noBorder */
+/* Filter section Css code */
 
 .filter_section {
 	width: 100%;
@@ -251,7 +252,7 @@ input::placeholder {
 
 
 
-/* Renting section */
+/* Renting section CSS code */
 
 .main_part {
 	display: flex;
@@ -312,7 +313,7 @@ input::placeholder {
 }
 
 
-/* Popular box */
+/* Popular box CSS code */
 
 .popular_box {
 	width: 30%;
